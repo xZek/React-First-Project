@@ -1,10 +1,12 @@
+/*
 .topNav{
     display: flex;
     padding: 0px 60px;
     background-color : #000;
-    color:#fff;
+    color:black;
     margin: 0;
     justify-content: space-between; 
+    
 }
 .topNav p{
     padding: 15px 10px;
@@ -20,15 +22,15 @@
 }
 .topNav a{
     color: #fff;
-}
+}*/
 .topNav2{
-
     display: flex;
     padding: 10px 50px;
-    background-color:#fff;
+    background-color: #fff;
     margin: 0;
     padding-top: 15px;
     justify-content: space-between;
+    border-bottom: 5px solid black;
     
 }
 .topNav2 img{

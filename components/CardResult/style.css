@@ -1,0 +1,16 @@
+.blogTitle{
+    text-align: center;
+    padding:30px;
+}
+hr.hrClass{
+    width: 20%;
+    border: 3px solid #dfdc2d;
+
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

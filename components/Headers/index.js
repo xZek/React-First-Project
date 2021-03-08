@@ -6,7 +6,7 @@ function Headers() {
     return (
     <div className="headers">
       
-        <div style={{ overflow: 'auto', padding:'10px' }} />
+     { /* <div style={{ overflow: 'auto', padding:'10px' }}  />*/ }
     </div>
     )
 }

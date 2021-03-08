@@ -1,21 +1,32 @@
 import React from 'react'
 import Card from '../Card';
+import './style.css'
 const cardData = [
 
-    {id : 1, imgURl :'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg', title : 'Card Title', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' },
-    {id : 2, imgURl :'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg', title : 'Card Title', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' },
-    {id : 3, imgURl :'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg', title : 'Card Title', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' },
-    {id : 4, imgURl :'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg', title : 'Card Title', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' }
-  
+    {id : 1, imgURl :'/assets/img/Card/pc1.jpg', title : 'Ofiste Leonard Cohen Modu ', text: 'Müzik tarihi içinde en güçlü ve etkileyici seslerden biri olan Leonard Cohen, 60 yılı bulan müzik yolculuğunda birbirinden güzel şarkılar seslendirdi, pek çok besteye imza attı.' },
+    {id : 2, imgURl :'/assets/img/Card/pc1.jpg', title : 'Ofiste Leonard Cohen Modu ', text: 'Müzik tarihi içinde en güçlü ve etkileyici seslerden biri olan Leonard Cohen, 60 yılı bulan müzik yolculuğunda birbirinden güzel şarkılar seslendirdi, pek çok besteye imza attı.' },
+    {id : 3, imgURl :'/assets/img/Card/pc1.jpg', title : 'Ofiste Leonard Cohen Modu ', text: 'Müzik tarihi içinde en güçlü ve etkileyici seslerden biri olan Leonard Cohen, 60 yılı bulan müzik yolculuğunda birbirinden güzel şarkılar seslendirdi, pek çok besteye imza attı.'},
+    {id : 4, imgURl :'/assets/img/Card/pc1.jpg', title : 'Ofiste Leonard Cohen Modu ', text: 'Müzik tarihi içinde en güçlü ve etkileyici seslerden biri olan Leonard Cohen, 60 yılı bulan müzik yolculuğunda birbirinden güzel şarkılar seslendirdi, pek çok besteye imza attı.' },
+
   ];
 
 
 function CardResult() {
     return (
     <div>
+    
+       <div style={{ overflow: 'auto',padding:'20px'}}  />
+        <div className="blogTitle">
+         
+           <h1>Diğer Bloglar</h1>
+           <hr className="hrClass"></hr>
+         </div>
+         <div className="container">
         {cardData.map(data =>(
-        <Card imgURl={data.imgURl} title={data.title} text={data.text} />
+        <Card key={data.toString()} imgURl={data.imgURl} title={data.title} text={data.text} />
          ))}  
+     </div>
+     <div style={{ overflow: 'auto',padding:'20px'}}  />
     </div>
     )
 }
